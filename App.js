@@ -6,8 +6,8 @@ export default class App extends React.Component {
 
     state = {
         noteArray: [
-            {date: '12/11/2017', note:'testnote 1'}, 
-            {date: '12/13/2017', note:'testnote 2'}
+            {date: '12/11/2017', note:'Review NativeScript (NS)'}, 
+            {date: '12/12/2017', note:'Review React Native (RN)'},
         ],
         noteText: ''
     }
@@ -22,7 +22,7 @@ export default class App extends React.Component {
             <View style={styles.container}>
 
                 <View style={styles.header}>
-                    <Text style={styles.headerText}>- ToDo List -</Text>
+                    <Text style={styles.headerText}>- ToDo List (RN) -</Text>
                 </View>
 
                 <ScrollView style={styles.scrollContainer}>
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        backgroundColor: '#E91E63',
+        backgroundColor: '#00b8e6',
         alignItems: 'center',
         justifyContent: 'center',
         borderBottomWidth: 10,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         right: 0,
     },
     addButton: {
-        backgroundColor: '#E91E63',
+        backgroundColor: '#00b8e6',
         width: 90,
         height: 90,
         borderRadius: 50,
